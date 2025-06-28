@@ -1,10 +1,8 @@
 <?php
-function compare($a,$b){if($a===$b){return 0;}}
-$a1=array("a"=>"green","b"=>"red","C"=>"purple");
-$a2=array("c"=>"red","e"=>"purple","d"=>"yellow");
-$newarray=array_diff_uassoc($a1,$a2,"compare");
+$a=array("Priya"=>"30",
+"Pooja"=>"34","Snehal"=>"40");
+$newArray=array_change_key_case($a,CASE_UPPER);
 echo"<pre>";
-print_r($newarray);
+print_r($newArray);
 echo"</pre>";
-
 ?>
